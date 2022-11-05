@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./media/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#pokedex-logo{
+    display: flex;
+    justify-content: center;
+}
