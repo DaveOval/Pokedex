@@ -250,6 +250,34 @@ body{
     transform: translate(0, 650%);
 }
 /*PARTE ROJA DERECHA*/
+button{
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.75em;
+  background-color: white;
+}
+.boton{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0.75em;
+    padding: 0.75em 1.5em;
+    background: white;
+}
+.boton:hover{
+    transform: translate(-0.0em);
+    }
+.boton:active{
+    transform: translateY(0.1em);
+}
+#pokeName{
+    margin: 5px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
 #parte-Roja-Derecha {
     margin-top: 150px;
     background-color: #c00e0e;
