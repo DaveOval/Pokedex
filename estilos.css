@@ -42,22 +42,25 @@ body{
         background: linear-gradient(270deg, rgba(61, 164, 218, 1) 0%, rgba(183, 250, 255, 1) 50%, rgba(61, 164, 218, 1) 100%);
 }
 .circulo-rojo{
-    height: 35px;
-    width: 35px;
+    height: 31px;
+    width: 31px;
+    border: 2px solid black;
     border-radius: 50px;
     background-color: red;
     transform: translate(350%, -180%);
 }
 .circulo-amarillo {
-    height: 35px;
-    width: 35px;
+    height: 31px;
+    width: 31px;
+    border: 2px solid black;
     border-radius: 50px;
     background-color: yellow;
     transform: translate(500%, -280%);
 }
 .circulo-verde {
-    height: 35px;
-    width: 35px;
+    height: 31px;
+    width: 31px;
+    border: 2px solid black;
     border-radius: 50px;
     background-color: green;
     transform: translate(650%, -380%);
@@ -100,8 +103,9 @@ body{
     overflow: hidden;
 }
 .boton-rojo{
-    height: 40px;
-    width: 40px;
+    height: 34px;
+    width: 34px;
+    border: 3px solid black;
     border-radius: 50px;
     background-color: rgb(134, 27, 27);
     transform: translate(225%, -900%);
@@ -154,15 +158,78 @@ body{
     width: 80px;
     background-color: green;
     border-radius: 20px;
-    transform: translate(210%, -1830%);
+    transform: translate(190%, -1890%);
 }
 .boton-rojo2 {
     height: 20px;
     width: 80px;
     background-color: rgb(134, 17, 17);
     border-radius: 20px;
-    transform: translate(340%, -1920%);
+    transform: translate(300%, -1980%);
 }
+.cruz-medio{
+    background-color: #1f2025;
+    height: 34px;
+    width: 34px;
+    transform: translate(976%, -1112%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruz1{
+    background-color: #1f2025;
+    height: 30px;
+    width: 35px;
+    border-radius: 10px 0px 0px 10px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: translate(799%, -1212%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cruz2 {
+    background-color: #1f2025;
+    height: 30px;
+    width: 35px;
+    border-radius: 0px 10px 10px 0px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: translate(987%, -1312%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruz3 {
+    background-color: #1f2025;
+    height: 35px;
+    width: 30px;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    transform: translate(976%, -1392%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruz4 {
+    background-color: #1f2025;
+    height: 35px;
+    width: 30px;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    transform: translate(975%, -1311%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*VISAGRA*/
 #visagra{
     height: 700px;
@@ -174,11 +241,13 @@ body{
     height: 70px;
     width: 70px;
     background-color: rgb(87, 13, 13);
+    transform: translate(0, 215%);
 }
 .visagra-cuadro-2{
     height: 70px;
     width: 70px;
     background-color: rgb(87, 13, 13);
+    transform: translate(0, 650%);
 }
 /*PARTE ROJA DERECHA*/
 #parte-Roja-Derecha {
