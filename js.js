@@ -15,7 +15,9 @@ const fetchPokemon = () => {
         if (data) {
             console.log(data);
             let pokeImg = data.sprites.front_default;
+            let pokeInfo = data.abilities;
             pokeImage(pokeImg);
+            pokeData(pokeInfo);
             console.log(pokeImg);
         }
     });
@@ -24,4 +26,9 @@ const fetchPokemon = () => {
 const pokeImage = (url) => {
     const pokePhoto = document.getElementById("pokeImg");
     pokePhoto.src = url;
+}
+const pokeData = (abilities) => {
+    const pokeAbilities = document.getElementById("abilities");
+    const abilitiesName = abilities.map(item => item.ability.name);
+    pokeAbilities.innerHTML = "<p>" + abilitiesName + "</p>" + "<br>";
 }
