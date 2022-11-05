@@ -1,5 +1,4 @@
 *{
-    margin: 0;
     padding: 0;
 }
 body{
@@ -9,5 +8,96 @@ body{
 }
 #pokedex-logo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin-top: 20px;
+}
+#audio{
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+}
+#pokedex{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 100px;
+}
+#parte-Roja-Izquierda{
+    background-color: #c00e0e;
+    height: 700px;
+    width: 450px;
+    border-radius: 40px 0px 0px 40px;
+}
+.circulo-azul{
+    height: 85px;
+    width: 85px;
+    border-radius: 50px;
+    transform: translate(25%, 25%);
+    background: rgb(61, 164, 218);
+        background: linear-gradient(270deg, rgba(61, 164, 218, 1) 0%, rgba(183, 250, 255, 1) 50%, rgba(61, 164, 218, 1) 100%);
+}
+.circulo-rojo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: red;
+    transform: translate(350%, -180%);
+}
+.circulo-amarillo {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: yellow;
+    transform: translate(500%, -280%);
+}
+.circulo-verde {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: green;
+    transform: translate(650%, -380%);
+}
+.parte-gris{
+    height: 350px;
+    width: 350px;
+    background-color: gray;
+    transform: translate(15%,-10%);
+    border-radius: 15px 15px 15px 100px;
+}
+.puntito-rojo-1{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(87, 13, 13);
+    border-radius: 50px;
+}
+.puntito-rojo-2 {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(87, 13, 13);
+    border-radius: 50px;
+}
+#visagra{
+    height: 700px;
+    width: 70px;
+    background: rgb(87, 13, 13);
+        background: linear-gradient(270deg, rgba(87, 13, 13, 1) 0%, rgba(192, 14, 14, 1) 50%, rgba(87, 13, 13, 1) 100%); 
+}
+.visagra-cuadro-1{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(87, 13, 13);
+}
+.visagra-cuadro-2{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(87, 13, 13);
+}
+#parte-Roja-Derecha {
+    background-color: #c00e0e;
+    height: 550px;
+    width: 450px;
+    border-radius: 0px 0px 40px 0px;
 }
