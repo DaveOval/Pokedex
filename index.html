@@ -7,6 +7,7 @@
     <link rel="icon" href="./media/icono.png" type="image/png">
     <title>Pokedex</title>
     <link rel="stylesheet" href="./estilos.css">
+    <script src="./js.js" type="text/javascript" defer></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,1,0" />
 </head>
@@ -15,7 +16,7 @@
     <section id="header">
         <div id="pokedex-logo">
             <img src="./media/pokedex-logo.png" width="20%" alt="logo pokedex">
-            <audio id="audio" src="./media/Pokémon Original Composition  8Bit.mp3"  controls loop autoplay ></audio>
+            <audio id="audio" src="./media/Pokémon Original Composition  8Bit.mp3"  controls loop autoplay></audio>
         </div>
     </section>
     <!--Pokedex-->
@@ -29,7 +30,11 @@
             <div class="parte-gris"></div>
             <div class="puntito-rojo-1"></div>
             <div class="puntito-rojo-2"></div>
-            <div id="pantalla"><img id="pokemon" src="./media/pokebola.jpg" alt=""></div>
+            <!--Pantalla-->
+            <div id="pantalla">
+                <img id="pokeImg" src="./media/pokebola.jpg" alt="">
+            </div>
+
             <div class="boton-rojo"></div>
             <div class="barra-negra1"></div>
             <div class="barra-negra2"></div>
@@ -63,6 +68,17 @@
 
         <!--Lado Derecho-->
         <div id="parte-Roja-Derecha">
+            <div  data-poke-card class="pantalla-verde">
+                <div></div>
+                
+            </div>
+
+            <!--Input buscador del pokemon-->
+            <div id="nombrePokemon">
+                <label for=""></label>
+                <input  id="pokeName" type="text" name="inputName" placeholder="escribe el pokemon"> 
+            </div>
+            <button onclick="fetchPokemon()">Presiona</button>
         
         </div>
 
