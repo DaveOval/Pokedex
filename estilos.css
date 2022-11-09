@@ -3,10 +3,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 1.0rem;
 }
 p{
-    font-size: 1.0rem:
+    font-size: 0.9rem;
 }
 body{
     background-image: url(./media/wallpaper.png);
@@ -18,7 +18,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.creadopor{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
 }
 #audio{
     width: 300px;
@@ -30,7 +37,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 /*PARTE ROJA IZQUIERDA*/
 #parte-Roja-Izquierda{
@@ -38,6 +45,8 @@ body{
     height: 700px;
     width: 450px;
     border-radius: 40px 0px 0px 40px;
+    border-bottom: 15px solid #650100;
+    border-left: 10px solid #650100;
 }
 .circulo-azul{
     height: 85px;
@@ -45,15 +54,20 @@ body{
     border: 4px solid white;
     border-radius: 50px;
     transform: translate(25%, 25%);
-    background: rgb(61, 164, 218);
-        background: linear-gradient(270deg, rgba(61, 164, 218, 1) 0%, rgba(183, 250, 255, 1) 50%, rgba(61, 164, 218, 1) 100%);
+    background: #FFFFFF;
+    background: -webkit-radial-gradient(center, #FFFFFF, #01CCFD);
+    background: -moz-radial-gradient(center, #FFFFFF, #01CCFD);
+    background: radial-gradient(ellipse at center, #FFFFFF, #01CCFD);
 }
 .circulo-rojo{
     height: 31px;
     width: 31px;
     border: 2px solid black;
     border-radius: 50px;
-    background-color: red;
+    background: #E39F9F;
+    background: -webkit-radial-gradient(center, #E39F9F, #FF0000);
+    background: -moz-radial-gradient(center, #E39F9F, #FF0000);
+    background: radial-gradient(ellipse at center, #E39F9F, #FF0000);
     transform: translate(350%, -180%);
 }
 .circulo-amarillo {
@@ -61,7 +75,10 @@ body{
     width: 31px;
     border: 2px solid black;
     border-radius: 50px;
-    background-color: yellow;
+    background: #FAFAD4;
+    background: -webkit-radial-gradient(center, #FAFAD4, #FFFF00);
+    background: -moz-radial-gradient(center, #FAFAD4, #FFFF00);
+    background: radial-gradient(ellipse at center, #FAFAD4, #FFFF00);
     transform: translate(500%, -280%);
 }
 .circulo-verde {
@@ -69,7 +86,10 @@ body{
     width: 31px;
     border: 2px solid black;
     border-radius: 50px;
-    background-color: green;
+    background: #DBF2D0;
+    background: -webkit-radial-gradient(center, #DBF2D0, #80BE60);
+    background: -moz-radial-gradient(center, #DBF2D0, #80BE60);
+    background: radial-gradient(ellipse at center, #DBF2D0, #80BE60);
     transform: translate(650%, -380%);
 }
 .parte-gris{
@@ -156,21 +176,30 @@ body{
 .boton-azul{
     height: 70px;
     width: 70px;
-    background: blue;
+    background: #5757FD;
+    background: -webkit-linear-gradient(top, #5757FD, #0101FF);
+    background: -moz-linear-gradient(top, #5757FD, #0101FF);
+        background: linear-gradient(to bottom, #5757FD, #0101FF);
     border-radius: 50px;
     transform: translate(100%, -460%);
 }
 .boton-verde{
     height: 20px;
     width: 80px;
-    background-color: green;
+    background: #7FCD57;
+    background: -webkit-linear-gradient(top, #7FCD57, #2C461F);
+    background: -moz-linear-gradient(top, #7FCD57, #2C461F);
+    background: linear-gradient(to bottom, #7FCD57, #2C461F);
     border-radius: 20px;
     transform: translate(190%, -1890%);
 }
 .boton-rojo2 {
     height: 20px;
     width: 80px;
-    background-color: rgb(134, 17, 17);
+    background: #D66666;
+    background: -webkit-linear-gradient(top, #D66666, #871313);
+    background: -moz-linear-gradient(top, #D66666, #871313);
+    background: linear-gradient(to bottom, #D66666, #871313);
     border-radius: 20px;
     transform: translate(300%, -1980%);
 }
@@ -243,6 +272,7 @@ body{
     width: 70px;
     background: rgb(87, 13, 13);
         background: linear-gradient(270deg, rgba(87, 13, 13, 1) 0%, rgba(192, 14, 14, 1) 50%, rgba(87, 13, 13, 1) 100%); 
+    border-bottom: 15px solid #650100;
 }
 .visagra-cuadro-1{
     height: 70px;
@@ -261,6 +291,7 @@ button{
   font-size: 17px;
   font-weight: bold;
   border: none;
+  position: absolute;
   border-radius: 0.75em;
   background-color: white;
 }
@@ -272,13 +303,13 @@ button{
     border-radius: 0.75em;
     padding: 0.75em 1.5em;
     background: white;
+    transform: translatey(250%);
+    border-bottom: 7px solid black;
 }
-.boton:hover{
-    transform: translate(-0.0em);
-    }
 .boton:active{
-    transform: translateY(0.1em);
+    transform: translatey(260%);
     background-color: rgb(228, 228, 228);
+    border-bottom: 5px solid black;
 }
 #pokeName{
     font-size: 1.4rem;
@@ -287,6 +318,8 @@ button{
     padding: 5px;
     border-radius: 10px;
     text-align: center;
+    transform: translatey(100%);
+    text-transform: uppercase;
 }
 #parte-Roja-Derecha {
     margin-top: 150px;
@@ -298,18 +331,48 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-bottom: 15px solid #650100;
 }
 .pantalla-verde{
     height: 200px;
-    width: 400px;
-    background-color: green;
+    width: 360px;
+    background: #92EC64;
+    background: -webkit-radial-gradient(center, #92EC64, #375726);
+    background: -moz-radial-gradient(center, #92EC64, #375726);
+    background: radial-gradient(ellipse at center, #92EC64, #375726);
     border: 1px solid black;
     border-radius: 10px;
-    transform: translate();
+    position: absolute;
+    transform: translatey(-40%);
     border: 10px solid transparent;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 21px;
     overflow: auto;
+    text-transform: uppercase;
+}
+.botn-pequeno-naranja{
+    background: #E39F9F;
+    background: -webkit-radial-gradient(center, #E39F9F, #FF0000);
+    background: -moz-radial-gradient(center, #E39F9F, #FF0000);
+    background: radial-gradient(ellipse at center, #E39F9F, #FF0000);
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    z-index: 100;
+    transform: translate(-700%, 800%);
+}
+.botn-pequeno-verde {
+    background: #DBF2D0;
+    background: -webkit-radial-gradient(center, #DBF2D0, #80BE60);
+    background: -moz-radial-gradient(center, #DBF2D0, #80BE60);
+    background: radial-gradient(ellipse at center, #DBF2D0, #80BE60);
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    z-index: 100;
+    transform: translate(-500%, 710%);
 }
