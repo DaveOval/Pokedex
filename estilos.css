@@ -17,7 +17,7 @@ marquee{
 body{
     background-image: url(./media/wallpaper.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%vh;
 }
 #pokedex-logo{
     display: flex;
