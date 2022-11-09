@@ -8,6 +8,12 @@ h2{
 p{
     font-size: 0.9rem;
 }
+marquee{
+    position: absolute;
+    align-items: flex-end;
+    transform: translatey(-60%);
+    z-index: -1;
+}
 body{
     background-image: url(./media/wallpaper.png);
     background-repeat: no-repeat;
